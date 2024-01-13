@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
+/*   By: dcruz <dcruz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 22:14:09 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/11 22:14:09 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/13 11:05:53 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include <string.h>
 
 void *ft_bzero(void *ptr, size_t n)
 {

@@ -6,13 +6,15 @@
 /*   By: dcruz <dcruz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 10:29:06 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/11 10:33:57 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/13 11:50:33 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(const char *s)
+#include <string.h>
+
+size_t ft_strlen(const char *s)
 {
-    int i = 0;
+    size_t i = 0;
     while(*s != '\0')
     {
         i++;

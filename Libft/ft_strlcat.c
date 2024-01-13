@@ -1,36 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcruz <dcruz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 19:36:36 by marvin            #+#    #+#             */
-/*   Updated: 2024/01/13 11:05:32 by dcruz            ###   ########.fr       */
+/*   Created: 2024/01/13 11:52:31 by dcruz             #+#    #+#             */
+/*   Updated: 2024/01/13 12:23:03 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void    *ft_memset(void *b, int c, size_t len)
+size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
 {
-    unsigned int	i;
-    char			*str;
-
-    i = 0;
-    str = (char *)b;
-    while (i < len)
+    size_t i = 0;
+   
+    while(*dst != '\0')
     {
-        str[i] = (char)c;
+        i++;
+        dst++;
+    }
+    if(*src == '\0')
+        return(i);
+     while (*src != '\0' && i < dstsize - 1)
+    {
+        *dst = *src;
+        dst++;
+        src++;
         i++;
     }
-    return (b);
-}
-
-int main()
-{
-    char p[50];
-
-    ft_memset(p, 65, 8 );
-    printf("%s\n", p);
+    *dst = '\0';
+    
+    while (*src != '\0')
+    {
+        src++;
+        i++;
+    }
+    return (i);
 }

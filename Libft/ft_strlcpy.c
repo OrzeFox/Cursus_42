@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcruz <dcruz@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/11 19:36:36 by marvin            #+#    #+#             */
-/*   Updated: 2024/01/13 11:05:32 by dcruz            ###   ########.fr       */
+/*   Created: 2024/01/13 11:34:06 by dcruz             #+#    #+#             */
+/*   Updated: 2024/01/13 11:45:25 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void    *ft_memset(void *b, int c, size_t len)
+size_t ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize)
 {
-    unsigned int	i;
-    char			*str;
-
-    i = 0;
-    str = (char *)b;
-    while (i < len)
+    size_t i = 0;
+    while (dstsize > 1 && *src != '\0') 
     {
-        str[i] = (char)c;
+        *dst = *src;
+        src++;
+        dst++;
+        i++;
+        dstsize--;
+    }
+    if (dstsize > 0)
+        *dst = '\0';
+
+    while (*src != '\0')
+    {
+        src++;
         i++;
     }
-    return (b);
-}
-
-int main()
-{
-    char p[50];
-
-    ft_memset(p, 65, 8 );
-    printf("%s\n", p);
+    return (i);
 }
