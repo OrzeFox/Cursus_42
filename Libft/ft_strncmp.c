@@ -1,18 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcruz <dcruz@student.42.fr>                +#+  +:+       +#+        */
+/*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/13 13:28:42 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/13 13:37:12 by dcruz            ###   ########.fr       */
+/*   Created: 2024/01/13 14:51:44 by dcruz             #+#    #+#             */
+/*   Updated: 2024/01/15 10:22:30 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
-{
-    if (c >= 'a' && c <= 'z')
-        return (c - 32);
-    return (c);
-}
+int ft_strncmp(const char *s1, const char *s2, size_t n);
