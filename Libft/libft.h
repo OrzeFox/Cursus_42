@@ -6,7 +6,7 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:45:06 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/15 14:52:49 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/15 15:13:45 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define LIBFT_H
 
 # include <stdio.h>
+#include <stddef.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);
@@ -32,5 +33,12 @@ char	*ft_strchr (const char *s, int c);
 char	*ft_strdup (const char *s1);
 size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize);
 size_t ft_strlcpy(char * restrict dst, const char * restrict src, size_t dstsize);
+size_t ft_strlen(const char *s);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+char	*ft_strnstr (const char *haystack, const char *needle, size_t len);
+char	*ft_strrchr (const char *s, int c);
+int		ft_tolower(int c);
+int		ft_toupper(int c);
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
