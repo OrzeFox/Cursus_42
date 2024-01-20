@@ -6,7 +6,7 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:45:06 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/15 15:13:45 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/20 11:17:53 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
+#include <stdio.h>
 #include <stddef.h>
+#include <stdlib.h>
 
 int		ft_atoi(const char *str);
-void	ft_bzero(void *s, size_t n);
+void	*ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t size);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -40,5 +41,6 @@ char	*ft_strrchr (const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 char *ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strtrim(char const *s1, char const *set);
 
 #endif

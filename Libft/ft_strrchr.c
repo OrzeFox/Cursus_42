@@ -6,7 +6,7 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 14:14:32 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/15 10:31:09 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/19 15:16:57 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,15 @@ char *ft_strrchr(const char *s, int c)
     }
     return NULL;
 }
+
+// int main()
+// {
+//     char *s = "Hello, World!";
+//     char c = 'l';
+//     char *p;
+//
+//     p = ft_strrchr(s, c);
+//     printf("String starting from last %c is: %s\n", c, p);
+//
+//     return 0;
+// }
