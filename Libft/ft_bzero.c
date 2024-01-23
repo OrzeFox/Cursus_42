@@ -6,22 +6,23 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 22:14:09 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/15 10:29:13 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/20 12:53:23 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_bzero(void *ptr, size_t n)
+void	*ft_bzero(void *ptr, size_t n)
 {
-    unsigned int i = 0;
-    char *p;
-    p =(char *)ptr;
-    while (n > i)
-    {
-        p[i] = '\0';
-        i++;
-    }
-    
-    return (p);
+	unsigned int	i;
+	char			*p;
+
+	i = 0;
+	p = (char *)ptr;
+	while (n > i)
+	{
+		p[i] = '\0';
+		i++;
+	}
+	return (p);
 }

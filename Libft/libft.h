@@ -6,7 +6,7 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:45:06 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 11:17:53 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/20 12:22:41 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,6 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strtrim(char const *s1, char const *set);
+char **ft_split(char const *s, char c);
 
 #endif
