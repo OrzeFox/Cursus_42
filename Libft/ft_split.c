@@ -6,9 +6,10 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 21:14:03 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/23 16:50:37 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/01/30 11:24:18 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	count_words(const char *s, char c)
@@ -64,19 +65,32 @@ char	*extract_word(const char *s, char c, int *index)
 	return (w);
 }
 
+void	free_split(char **str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	char	**str;
-	int		i;
-	int		j;
+	int			i;
+	char		**str;
+	int			j;
 
+	i = 0;
+	j = 0;
 	if (!s)
 		return (NULL);
 	str = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!str)
 		return (NULL);
-	i = 0;
-	j = 0;
 	while (s[i])
 	{
 		while (s[i] == c)
@@ -84,7 +98,7 @@ char	**ft_split(char const *s, char c)
 		if (s[i])
 		{
 			str[j] = extract_word(s, c, &i);
-			if (!str[j])
+			if (!str[j] && (free_split(str), 1))
 				return (NULL);
 			j++;
 		}
