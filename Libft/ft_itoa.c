@@ -1,37 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/15 14:55:23 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/25 11:29:33 by dcruz            ###   ########.fr       */
+/*   Created: 2024/01/25 12:34:36 by dcruz             #+#    #+#             */
+/*   Updated: 2024/01/30 10:35:42 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+static int	get_num_len(int n)
+{
+	int	len;
+
+	len = 0;
+	if (n <= 0)
+		len++;
+	while (n != 0)
+	{
+		n /= 10;
+		len++;
+	}
+	return (len);
+}
+
+char	*ft_itoa(int n)
 {
 	char	*str;
-	size_t	i;
+	int		len;
+	int		sign;
 
-	i = 0;
-	if (!s)
-		return (NULL);
-	if (start > ft_strlen(s))
-		len = 0;
-	else if (ft_strlen(s + start) < len)
-		len = ft_strlen(s + start);
-	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (n == 0)
+		return (ft_strdup("0"));
+	if (n < 0)
+		sign = -1;
+	else
+		sign = 1;
+	len = get_num_len(n);
+	str = (char *)malloc((len + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
-	while (i < len && s[start + i] != '\0')
+	str[len] = '\0';
+	while (n != 0)
 	{
-		str[i] = s[start + i];
-		i++;
+		str[--len] = '0' + (sign * (n % 10));
+		n /= 10;
 	}
-	str[i] = '\0';
+	if (sign == -1)
+		str[0] = '-';
 	return (str);
 }

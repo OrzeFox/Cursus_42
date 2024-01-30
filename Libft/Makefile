@@ -6,18 +6,18 @@
 #    By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/13 22:36:55 by dcruz             #+#    #+#              #
-#    Updated: 2024/01/20 12:23:13 by dcruz            ###   ########.fr        #
+#    Updated: 2024/01/25 12:51:28 by dcruz            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
-ft_isdigit.c ft_isprint.c ft_memcmp.c \
+ft_isdigit.c ft_isprint.c ft_itoa.c ft_memcmp.c \
 ft_memcpy.c ft_memmove.c ft_memset.c ft_split.c \
 ft_strchr.c ft_strdup.c ft_strjoin.c \
 ft_strlcat.c ft_strlcpy.c ft_strlen.c  ft_strncmp.c ft_strnstr.c \
-ft_strrchr.c  ft_substr.c ft_tolower.c ft_toupper.c ft_trim.c
+ft_strrchr.c ft_strmapi.c ft_substr.c ft_tolower.c ft_toupper.c ft_trim.c
 
 OBJS = $(SRCS:.c=.o)
 
