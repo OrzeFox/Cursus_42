@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 10:42:09 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/23 17:10:48 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 12:03:04 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función get_start_index encuentra el índice de inicio para la subcadena no
+// formada por caracteres presentes en el conjunto 'set' en la cadena 's'.
 
 static size_t	get_start_index(const char *s, const char *set)
 {
@@ -22,6 +25,12 @@ static size_t	get_start_index(const char *s, const char *set)
 	return (start);
 }
 
+// La función get_end_index encuentra
+// el índice de fin para la subcadena no
+// formada por caracteres presentes en
+// el conjunto 'set' en la cadena 's', a partir
+// del índice de inicio proporcionado.
+
 static size_t	get_end_index(const char *s, const char *set, size_t start)
 {
 	size_t	end;
@@ -31,6 +40,12 @@ static size_t	get_end_index(const char *s, const char *set, size_t start)
 		end--;
 	return (end);
 }
+
+//  La función ft_strtrim elimina los caracteres
+// presentes en el conjunto 'set' al inicio
+//  y al final de la cadena 's1'. Devuelve una
+// nueva cadena dinámica asignada que contiene
+//  la versión recortada de la cadena original.
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

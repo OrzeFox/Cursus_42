@@ -6,11 +6,17 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:56:36 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 14:55:21 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:41:07 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strdup() devuelve un puntero a 
+// una nueva cadena que es un duplicado
+// de la cadena s. La memoria para la nueva 
+// cadena se obtiene con malloc(3) y
+// se puede liberar con free(3).
 
 char	*ft_strdup(const char *s1)
 {

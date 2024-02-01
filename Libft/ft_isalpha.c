@@ -6,11 +6,17 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 12:29:04 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 14:16:18 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:16:08 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función isalpha() comprueba si un carácter 
+// cumple con la condición de ser mayúscula 
+// (isupper(3)) o minúscula (islower(3)).
+// El valor del argumento debe ser representable 
+// como un unsigned char o el valor de EOF.
 
 int	ft_isalpha(int c)
 {

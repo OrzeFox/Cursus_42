@@ -6,11 +6,18 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:54:05 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 15:33:16 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 12:03:21 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strnstr() encuentra
+// la primera aparición de la subcadena
+// needle en la cadena haystack, 
+// donde no más de len caracteres son buscados.
+// Los caracteres que aparecen después
+// de un carácter `\0' no son buscados.
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

@@ -6,11 +6,20 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:52:31 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 15:47:55 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 12:03:30 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strlcat() concatena la cadena 
+// src a la cadena dst.
+// Se anexa la cadena src a la cadena dst, 
+// sobrescribiendo el carácter nulo
+// al final de dst, y luego se anexa un 
+// carácter nulo adicional.
+// La cadena dst resultante está garantizada 
+// para estar terminada en nulo.
 
 size_t	ft_strlcat(char *restrict dst,
 		const char *restrict	src, size_t	dstsize)

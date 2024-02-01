@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/11 22:14:09 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 12:53:23 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:14:01 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función bzero() escribe n bytes con valor cero en la cadena s.
+// Si n es cero, bzero() no hace nada.
 
 void	*ft_bzero(void *ptr, size_t n)
 {

@@ -6,11 +6,16 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 12:39:38 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/25 12:50:26 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:53:43 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strmapi() aplica la función f
+// a cada carácter de la cadena s
+// para crear una nueva cadena (con malloc(3))
+// que resulta de las aplicaciones sucesivas de f.
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

@@ -6,11 +6,15 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 16:40:08 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 15:08:49 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:41:42 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strjoin() concatena las cadenas 
+// s1 y s2 en una nueva cadena.
+// Devuelve la nueva cadena, o NULL si falla.
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

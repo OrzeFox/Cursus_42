@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 13:37:55 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/23 12:16:28 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 12:03:14 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función tolower() convierte
+// una letra mayúscula a minúscula.
 
 int	ft_tolower(int c)
 {

@@ -6,11 +6,16 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:01:18 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 14:34:22 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:35:13 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función memmove() copia len bytes 
+// de la cadena src a la cadena dst.
+// Las dos cadenas pueden solaparse; 
+// la copia se realiza de forma no destructiva.
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

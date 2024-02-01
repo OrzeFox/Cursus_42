@@ -6,11 +6,17 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 14:41:41 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 14:14:14 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:15:49 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función isalnum() comprueba si un carácter cumple 
+// con la condición de ser alfabético 
+// (isalpha(3)) o numérico (isdigit(3)).
+// El valor del argumento debe ser representable 
+// como un unsigned char o el valor de EOF.
 
 int	ft_isalnum(int c)
 {

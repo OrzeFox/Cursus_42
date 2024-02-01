@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 14:14:32 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/25 12:25:15 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:55:36 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strrchr() devuelve un puntero a la última
+// aparición del carácter c en la cadena s.
 
 char	*ft_strrchr(const char *s, int c)
 {

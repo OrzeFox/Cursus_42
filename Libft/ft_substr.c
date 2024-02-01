@@ -6,11 +6,15 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 14:55:23 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/25 11:29:33 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 12:03:16 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función substr() devuelve una subcadena de la cadena s.
+// La subcadena comienza en el índice 
+// start y tiene una longitud máxima de len.
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

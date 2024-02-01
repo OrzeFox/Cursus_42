@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 10:43:43 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/30 10:48:00 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:35:51 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función putnbr_fd() escribe el 
+// entero n en el archivo especificado por fd.
 
 void	ft_putnbr_fd(int n, int fd)
 {

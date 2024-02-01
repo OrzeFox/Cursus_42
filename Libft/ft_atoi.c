@@ -6,11 +6,14 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 22:55:28 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 12:45:40 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:13:34 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función atoi() convierte la porción inicial 
+//de la cadena apuntada por str a su representación entera.
 
 int	ft_atoi(const char	*str)
 {

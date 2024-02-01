@@ -6,11 +6,15 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 11:34:06 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 15:24:15 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:47:16 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función strlcpy() copia hasta dstsize - 1 caracteres
+// desde la cadena src a dst, NUL-terminando el resultado.
+// Devuelve la longitud de la cadena truncada.
 
 size_t	ft_strlcpy(char *restrict dst,
 		const char *restrict src, size_t dstsize)

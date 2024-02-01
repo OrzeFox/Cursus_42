@@ -6,11 +6,15 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 15:22:42 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/20 14:17:27 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:16:28 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función isascii() verifica si un carácter es ASCII,
+// lo cual significa que está en el
+// rango de 0 a octal 0177, inclusive.
 
 int	ft_isascii(int c)
 {

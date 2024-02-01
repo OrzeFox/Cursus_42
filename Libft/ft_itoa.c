@@ -6,11 +6,13 @@
 /*   By: dcruz <dcruz@student.42barcelona.com>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 12:34:36 by dcruz             #+#    #+#             */
-/*   Updated: 2024/01/30 10:35:42 by dcruz            ###   ########.fr       */
+/*   Updated: 2024/02/01 11:02:30 by dcruz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// La función itoa() convierte un entero en una cadena de caracteres.
 
 static int	get_num_len(int n)
 {
